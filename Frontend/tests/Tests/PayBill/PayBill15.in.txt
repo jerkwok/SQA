@@ -1,0 +1,9 @@
+login
+standard
+test enoughstudent
+paybill
+00009
+CQ
+300
+logout
+exit

@@ -1,0 +1,9 @@
+00001 testaccount1        A 123.00   N
+00002 testaccount2        A 999.45   N
+00003 testaccount3        A 5999.45  N
+00004 testdisabled        D 2000.00  N
+00005 teststudent         A 3000.00  S
+00006 testexact           A 400.00   N
+00007 teststudentexact    A 400.00   S
+00008 testenough          A 300.10   N
+00009 testenoughstudent   A 300.05   S

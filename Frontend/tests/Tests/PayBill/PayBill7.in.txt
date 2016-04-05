@@ -1,0 +1,9 @@
+login
+standard
+test account3
+paybill
+00003
+EC
+2100.00
+logout
+exit

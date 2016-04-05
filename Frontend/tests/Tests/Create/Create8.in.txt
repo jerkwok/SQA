@@ -1,0 +1,7 @@
+login 
+admin
+create
+abcdeABCDEabcdeABCDEabcde
+5999.45
+logout
+exit

@@ -1,0 +1,9 @@
+login
+standard
+test exact
+paybill
+00006
+CQ
+400.00
+logout
+exit

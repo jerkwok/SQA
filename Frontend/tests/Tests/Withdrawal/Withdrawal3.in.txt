@@ -1,0 +1,10 @@
+login
+standard
+test account1
+withdrawal
+000002
+withdrawal
+00001
+200.00
+logout
+exit

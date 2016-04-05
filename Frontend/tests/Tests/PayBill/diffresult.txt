@@ -1,0 +1,73 @@
+:TEST 1:
+1c1,2
+< 10 test account1        00000 00000.00 S  N
+---
+> 10 test account1       00000 00000.00 S  N
+> 03 test account1       00001 000100.00 EC N
+:TEST 2:
+1c1,2
+< 10                      00000 00000.00 A  N
+---
+> 10                      00000 00000.00 A  N
+> 03 test account1       00001 00023.00 TV N
+:TEST 3:
+1c1
+< 10 test account1        00000 00000.00 S  N
+---
+> 10                      00000 00000.00 A  N
+:TEST 4:
+1c1
+< 10 test account1        00000 00000.00 S  N
+---
+> 10 test account1       00000 00000.00 S  N
+:TEST 5:
+1c1
+< 10 test account1        00000 00000.00 S  N
+---
+> 10 test account1       00000 00000.00 S  N
+:TEST 6:
+:TEST 7:
+1c1
+< 10 test account3        00000 00000.00 S  N
+---
+> 10 test account3       00000 00000.00 S  N
+:TEST 8:
+1c1
+< 10 test account1        00000 00000.00 S  N
+---
+> 10 test account1       00000 00000.00 S  N
+:TEST 9:
+2c2
+< 04 test account1        00001 00100.00 TV N
+---
+> 03 test account1       00001 00100.00 TV N
+:TEST 10:
+2c2
+< 04 test exact           00006 00400.00 CQ N
+---
+> 03 test exact          00006 00400.00 CQ N
+:TEST 11:
+:TEST 12:
+1c1
+< 10 test exactstudent    00000 00000.00 S  N
+---
+> 10 test exactstudent    00000 00000.00 S S
+:TEST 13:
+1,2c1,2
+< 10 test enough          00000 00000.00 S  N
+< 04 test enough          00008 00300.00 CQ N
+---
+> 10 test enough         00000 00000.00 S  N
+> 03 test enough         00008 00300.00 CQ N
+:TEST 14:
+1,2c1,2
+< 10 test enoughstudent   00000 00000.00 S  N
+< 04 test enoughstudent   00009 00300.00 CQ S
+---
+> 10 test enoughstudent  00000 00000.00 S  S
+> 03 test enoughstudent  00008 00300.00 CQ S
+:TEST 15:
+1c1
+< 10 test enoughstudent   00000 00000.00 S  N
+---
+> 10 test enoughstudent  00000 00000.00 S  S

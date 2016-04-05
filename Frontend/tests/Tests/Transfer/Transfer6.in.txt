@@ -1,0 +1,13 @@
+login
+standard
+test account3
+transfer
+00003
+00001
+900.00
+transfer
+00003
+00001
+300.00
+logout
+exit

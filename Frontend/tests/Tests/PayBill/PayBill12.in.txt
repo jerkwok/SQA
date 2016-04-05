@@ -1,0 +1,9 @@
+login
+standard
+test exactstudent
+paybill
+00007
+CQ
+400.00
+logout
+exit

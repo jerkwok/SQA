@@ -1,0 +1,6 @@
+login
+admin
+create
+Jeremy
+2468.10
+exit

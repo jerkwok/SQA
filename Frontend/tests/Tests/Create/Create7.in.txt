@@ -1,0 +1,7 @@
+login 
+admin
+create
+test accountNEW
+123456789.00
+logout
+exit

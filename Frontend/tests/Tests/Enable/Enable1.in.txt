@@ -1,0 +1,10 @@
+login
+admin
+enable
+test disabled
+00004
+withdrawal
+test disabled
+00004
+logout
+exit

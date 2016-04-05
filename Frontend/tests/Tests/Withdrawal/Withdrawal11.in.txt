@@ -1,0 +1,8 @@
+login
+admin
+withdrawal
+test enough
+00008
+-300.00
+logout
+exit

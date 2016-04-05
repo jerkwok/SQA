@@ -1,0 +1,7 @@
+deposit
+login
+standard
+test account1
+login
+logout
+exit

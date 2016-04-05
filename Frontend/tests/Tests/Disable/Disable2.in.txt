@@ -1,0 +1,14 @@
+login
+standard
+test account1
+disable
+logout
+login
+admin
+disable
+test JUNK
+disable
+test account1
+00002
+logout
+exit

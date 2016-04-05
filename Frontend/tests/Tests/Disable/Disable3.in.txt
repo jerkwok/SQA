@@ -1,0 +1,7 @@
+login
+admin
+disable
+test disabled
+00004
+logout
+exit

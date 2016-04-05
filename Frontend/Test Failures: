@@ -1,0 +1,27 @@
+Test Failures:
+Create 3 Failure, did not properly handle too long names
+      name.resize(20);
+      >>
+	  move erase to else
+      name = name.substr(0,20);
+
+Delete Failures, delete was not correctly implemented
+Delete Failures, delete transaction was not correctly writing to output files (endline character issue)
+
+Enable 1 , enable transaction was not correctly writing to output file (endline character issue)
+
+Disable 1, disable transaction was not correctly writing to output file (endline character issue)
+
+Deposit 4, Did not check for negative numbers.
+Deposit 10, did not check for going over maximum.
+Deposit 11, rounding error.
+Deposit 12, did not check for malformed number entry.
+
+Withdrawal 6, was not updating the session withdrawal amount correctly.
+
+PayBill (all) bool condition for checking proper companies was backward.
+
+Transfer 4, did not check for negative numbers
+Transfer 6, was not updating the session transfer amount correctly.
+
+ChangePlan 5, did not check against real names 

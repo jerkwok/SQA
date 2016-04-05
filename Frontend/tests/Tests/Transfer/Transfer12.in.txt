@@ -1,0 +1,9 @@
+login
+standard
+test enoughstudent
+transfer
+00009
+00002
+300
+logout
+exit

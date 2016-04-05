@@ -1,0 +1,8 @@
+login
+standard
+test exact
+withdrawal
+00006
+400.00
+logout
+exit

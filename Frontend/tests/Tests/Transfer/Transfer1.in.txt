@@ -1,0 +1,9 @@
+login
+standard
+test account1
+transfer
+00001
+00002
+50.00
+logout
+exit

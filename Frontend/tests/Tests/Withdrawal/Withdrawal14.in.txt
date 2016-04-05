@@ -1,0 +1,8 @@
+login
+standard
+test enough
+withdrawal
+00008
+300.10
+logout
+exit

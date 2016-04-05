@@ -1,0 +1,8 @@
+login 
+admin
+logout
+login
+standard
+test account1
+logout
+exit

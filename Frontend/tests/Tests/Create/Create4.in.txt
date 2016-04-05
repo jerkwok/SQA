@@ -1,0 +1,10 @@
+login 
+admin
+create
+test accountNEW
+123.00
+paybill
+EC
+20.00
+logout
+exit

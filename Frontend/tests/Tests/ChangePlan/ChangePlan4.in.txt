@@ -1,0 +1,7 @@
+login
+admin
+changeplan
+test account1
+11111
+logout
+exit

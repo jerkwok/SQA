@@ -1,0 +1,8 @@
+login
+standard
+test enoughstudent
+withdrawal
+00009
+300.05
+logout
+exit

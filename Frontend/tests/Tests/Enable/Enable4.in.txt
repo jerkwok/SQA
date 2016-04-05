@@ -1,0 +1,6 @@
+login
+standard
+test account1
+enable
+logout
+exit

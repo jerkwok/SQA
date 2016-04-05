@@ -1,0 +1,7 @@
+login
+standard
+test account1
+paybill
+00002
+logout
+exit

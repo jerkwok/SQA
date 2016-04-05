@@ -1,0 +1,10 @@
+login
+admin
+delete
+test account1
+00001
+withdrawal
+test account1
+00001
+logout
+exit

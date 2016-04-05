@@ -1,0 +1,9 @@
+login
+standard
+test account1
+logout
+login
+standard
+test account2
+logout
+exit

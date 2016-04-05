@@ -1,0 +1,9 @@
+login 
+standard
+test account1
+create
+delete
+disable
+changeplan
+logout
+exit

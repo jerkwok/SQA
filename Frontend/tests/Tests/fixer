@@ -1,0 +1,34 @@
+#!/bin/bash
+
+# cd $1
+cd $1
+# pwd
+
+numfiles=(*)
+numfiles=${#numfiles[@]}
+numfiles=$(($numfiles / 2))
+
+for i in $(seq 1 $numfiles)
+do
+	string=""
+	string+="$1"
+	string+="$i"
+
+	# strong="$1"
+	# strong+="$i"
+
+	stringout=$string
+	# strongout=$strong
+
+	string+=".in.txt"
+	# strong+=".in.txt"
+
+	# stringout+=".out.txt"
+	# strongout+=".out.txt"
+
+	printf "\nexit" >> $string
+	printf "\n" >> $string
+
+	# mv $string $strong
+	# mv $stringout $strongout
+done

@@ -1,0 +1,9 @@
+login
+standard
+test exactstudent
+withdrawal
+00007
+00002
+300.00
+logout
+exit

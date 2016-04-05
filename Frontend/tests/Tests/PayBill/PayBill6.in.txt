@@ -1,0 +1,9 @@
+login
+admin
+paybill
+test account1
+00001
+CQ
+1000.00
+Logout
+exit

@@ -1,0 +1,9 @@
+login
+admin
+transfer
+test exact
+00006
+00002
+400.00
+logout
+exit

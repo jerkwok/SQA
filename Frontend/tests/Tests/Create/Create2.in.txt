@@ -1,0 +1,10 @@
+login 
+admin
+create
+test accountNEW
+123.00
+withdrawal
+test accountNEW
+00006
+logout
+exit

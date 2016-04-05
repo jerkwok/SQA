@@ -1,0 +1,12 @@
+login
+standard
+test account1
+deposit
+00001
+100.00
+paybill
+00001
+TV
+100.00
+logout
+exit

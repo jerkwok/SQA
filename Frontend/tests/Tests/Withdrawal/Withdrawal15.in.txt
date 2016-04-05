@@ -1,0 +1,8 @@
+login
+admin
+withdrawal
+test account2
+00002
+201.00
+logout
+exit

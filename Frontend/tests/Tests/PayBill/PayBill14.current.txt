@@ -1,0 +1,3 @@
+10 test enoughstudent   00000 00000.00 S  N
+04 test enoughstudent   00009 00300.00 CQ S
+00                      00000 00000.00 00 N

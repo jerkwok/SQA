@@ -1,0 +1,7 @@
+login
+admin
+enable
+test account1
+00001
+logout
+exit

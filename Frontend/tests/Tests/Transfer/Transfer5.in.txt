@@ -1,0 +1,9 @@
+login
+standard
+test account3
+transfer
+00003
+00001
+2000.00
+logout
+exit
