@@ -720,7 +720,7 @@ void State::create(){
     int lastnumber;
     if (accountlist.size() == 0)
     {
-      lastnumber = 0;
+      lastnumber = 1;
     }else{
       lastnumber = stoi(accountlist.at(accountlist.size()-1).number) + 1;
     }
