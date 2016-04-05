@@ -18,7 +18,7 @@
 
 #include <iostream>
 #include <fstream>
-#include <string.h>
+#include <string>
 #include <vector>
 #include <stdio.h>
 #include <stdlib.h>
