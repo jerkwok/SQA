@@ -717,7 +717,13 @@ void State::create(){
 
     //grab last account number
     int newaccountnumber; 
-    int lastnumber = stoi(accountlist.at(accountlist.size()-1).number) + 1;
+    int lastnumber;
+    if (accountlist.size() == 0)
+    {
+      lastnumber = 0;
+    }else{
+      lastnumber = stoi(accountlist.at(accountlist.size()-1).number) + 1;
+    }
     //add the transaction
     addtransaction(5, name, to_string(lastnumber), newbalance, "00", "N");        
 
