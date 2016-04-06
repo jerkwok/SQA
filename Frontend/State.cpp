@@ -542,6 +542,13 @@ void State::paybill(){
     return;
   }
 
+
+  //check for max payment
+  if (amount > 2000){
+    cout << "max payment is 2000" << endl;
+    return;
+  }
+
   //check for bill payment limits, only if we aren't admin
   if(!sessiontype){
     if (company.compare("EC") == 0){
@@ -561,11 +568,7 @@ void State::paybill(){
       }
     }
 
-    //check for max payment
-    if (amount > 2000){
-      cout << "max payment is 2000" << endl;
-      return;
-    }
+   
   }
 
   //Check if the account is a student account
@@ -934,7 +937,8 @@ void State::changeplan(){
             addtransaction(8, name, sourceaccount, 0.00, "00", "S");        
             return;
           }else{
-            cout << "account needs to be student plan" << endl;
+            //add the transaction
+            addtransaction(8, name, sourceaccount, 0.00, "00", "N");   
           }
         }else{
           cout << "account holder must match account number" << endl;

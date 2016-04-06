@@ -1,4 +1,1 @@
 - fees only charged when user is standard user
-- paybill: move checking amount > 2000 before checking if company paid more than limit
-- changeplan: switches between S and N not only from S to N
-- create: breaks on empty accounts file
