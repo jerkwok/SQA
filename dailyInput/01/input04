@@ -1,9 +1,9 @@
 login
-standard
-testPerson01
-transfer
-2
-3
-200.00
-logout
+admin
+create
+Steve
+890.00
+create
+Jeff Doe
+0.42
 exit
