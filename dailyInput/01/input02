@@ -1,14 +1,6 @@
 login
-standard
-John Doe
-deposit
-1
-30.00
-logout
-login
 admin
-changeplan
-testPerson02
-3
-logout
+create
+testPerson01
+10000.00
 exit
