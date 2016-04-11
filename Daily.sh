@@ -2,6 +2,8 @@
 
 #day=${1:-1}
 
+rm mergedoutput.txt
+
 # Run the frontend 5 times
 ./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output0.txt < ./Frontend/tests/Tests/Login/Login1.in.txt
 ./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output1.txt < ./Frontend/tests/Tests/Login/Login1.in.txt
@@ -20,7 +22,7 @@ do
 done
 
 # Remove the non merged output files
-rm output*
+# rm output*
 
 cd Backend/
 
