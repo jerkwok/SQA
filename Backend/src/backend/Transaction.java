@@ -116,12 +116,12 @@ public abstract class Transaction {
           }
         } else {
           // The account holder field should be whoever is currently logged in.
-          if (!accountHolder.equals(context.currentUser)) {
-            throw new InvalidTransactionException(
-              "Expected account holder name to be "+
-              "\"" + context.currentUser + "\", got \"" + accountHolder + "\""
-            );
-          }
+          // if (!accountHolder.equals(context.currentUser)) {
+          //   throw new InvalidTransactionException(
+          //     "Expected account holder name to be "+
+          //     "\"" + context.currentUser + "\", got \"" + accountHolder + "\""
+          //   );
+          // }
         }
         // Account number should be 0 for logouts.
         if (accountNumber != 0) {

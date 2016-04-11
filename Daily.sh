@@ -7,7 +7,7 @@
 ./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output1.txt < ./Frontend/tests/Tests/Login/Login1.in.txt
 ./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output2.txt < ./Frontend/tests/Tests/Login/Login1.in.txt
 ./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output3.txt < ./Frontend/tests/Tests/Login/Login1.in.txt
-./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output4.txt
+./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output4.txt < ./Frontend/tests/Tests/Login/Login1.in.txt
 #./Frontend/banksys ./dailyInput/CurrentBankAccounts.txt output0.txt < ./dailyInput/0$day/input01
 
 #Merge the output files

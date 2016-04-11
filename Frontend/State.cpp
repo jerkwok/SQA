@@ -101,20 +101,23 @@ void State::addtransaction(int code, string name, string account, float funds, s
 
   //add misc info
   //pad spaces
-  if (misc.length() == 2){
-    misc = misc + " ";
-  }
+  // if (misc.length() == 2){
+  //   misc = misc + " ";
+  // }
 
-  line = line + misc;
+  //line = line + misc;
 
   //add admin/non admin
   // if (admin.length() == 1){
   //   admin = admin + " ";
   // }
+  if(admin == "N"){
+    admin = "S";
+  }
   line = line + admin;
 
   //add line break
-  line = line + "\n";
+  line = line + + " " + "\n";
 
   // cout << "line: " << line << endl;
 
@@ -960,7 +963,7 @@ void State::changeplan(){
 //logout and write transactions to the output file
 void State::logout(string filename){
   loggedin = false;
-  addtransaction(0,"","",0.0,"00","N");
+  addtransaction(0,"","",0.0,"00"," ");
   writetransactions(filename);
   cout << "Successful Logout" << endl;
 
