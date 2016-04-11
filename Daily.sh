@@ -2,14 +2,14 @@
 
 #day=${1:-1}
 
-rm mergedoutput.txt
+rm $6
 
 # Run the frontend 5 times
-./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output0.txt < ./Frontend/tests/Tests/Login/Login1.in.txt
-./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output1.txt < ./Frontend/tests/Tests/Login/Login1.in.txt
-./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output2.txt < ./Frontend/tests/Tests/Login/Login1.in.txt
-./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output3.txt < ./Frontend/tests/Tests/Login/Login1.in.txt
-./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output4.txt < ./Frontend/tests/Tests/Login/Login1.in.txt
+./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output0.txt < $1
+./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output1.txt < $2
+./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output2.txt < $3
+./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output3.txt < $4
+./Frontend/banksys ./Frontend/CurrentBankAccounts.txt output4.txt < $5
 #./Frontend/banksys ./dailyInput/CurrentBankAccounts.txt output0.txt < ./dailyInput/0$day/input01
 
 #Merge the output files
@@ -18,7 +18,7 @@ do
 	# echo $i
 	filename="output"
 	filename=$filename"$i.txt"
-	cat $filename >> mergedoutput.txt
+	cat $filename >> $6
 done
 
 # Remove the non merged output files
@@ -28,6 +28,6 @@ cd Backend/
 
 make
 
-java -cp bin backend.BackEnd ../scripttesting/MasterBankAccounts.txt ../mergedoutput.txt ../scripttesting/NewMasterBankAccounts.txt ../scripttesting/CurrentBankAccounts.txt
+java -cp bin backend.BackEnd ../scripttesting/MasterBankAccounts.txt ../$6 ../scripttesting/NewMasterBankAccounts.txt ../scripttesting/CurrentBankAccounts.txt
 
 cd ..

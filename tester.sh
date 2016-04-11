@@ -1,0 +1,7 @@
+#!/bin/sh
+
+./Daily.sh	./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt mergedoutput0.txt
+./Daily.sh	./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt mergedoutput1.txt
+./Daily.sh	./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt mergedoutput2.txt
+./Daily.sh	./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt mergedoutput3.txt
+./Daily.sh	./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt ./Frontend/tests/Tests/Login/Login1.in.txt mergedoutput4.txt
