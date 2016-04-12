@@ -6,6 +6,8 @@ cd Frontend/
 
 make
 
+cd ..
+
 rm $6
 
 # Run the frontend 5 times
