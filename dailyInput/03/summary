@@ -1,0 +1,13 @@
+Withdraws, deposit, and changeplan
+
+input01:
+testPerson01 3 -300.00 > 9499.80
+
+input02:
+Jeff Doe 7 changeplan > student
+
+input03:
+John Doe 5 1000.00 > 1499.95
+
+input04:
+Jane Doe 4 400.00 > 631.00
