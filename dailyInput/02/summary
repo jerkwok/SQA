@@ -1,0 +1,14 @@
+Withdraws, deposits, and change plans
+
+input01:
+Jeff Doe 7 -50.00 > error
+
+input02:
+John Doe 1 30.00 > 129.90 (normal fee?)
+testPerson02 2 change > student
+
+input03:
+John Doe 1 -50.00 > 79.80 (normal fee?)
+
+input04:
+testPerson01 transfer 3 2 200.00 > 9799.90 700.30
