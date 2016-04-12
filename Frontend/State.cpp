@@ -111,7 +111,8 @@ void State::addtransaction(int code, string name, string account, float funds, s
   // if (admin.length() == 1){
   //   admin = admin + " ";
   // }
-  if(admin == "N"){
+  cout << admin << ";" << endl;
+  if(admin.compare("N") == 0){
     admin = "S";
   }
   line = line + admin;
@@ -204,14 +205,14 @@ void State::login(){
     input.erase( input.find_last_not_of( " \n\r" ) + 1 );
     if(input.compare("admin") == 0){
       sessiontype = 1;
-      admin = "A ";
+      admin = "A";
     }else if(input.compare("standard") == 0){
       cout << "Enter account holder's name" << endl;
       getline(cin, input);
       input.erase( input.find_last_not_of( "\n\r" ) + 1 );
       name = input;
       sessiontype = 0;
-      admin = "S ";
+      admin = "S";
     }else{
       cout << "input not recognized:" << input << endl;
       return;
@@ -219,7 +220,7 @@ void State::login(){
     loggedin = 1;
     cout << "Successful Login" << endl;
 
-    addtransaction(10, name, "00000", 00000.00, admin, "N");        
+    addtransaction(10, name, "00000", 00000.00, admin, admin);        
     // cout << "login status: " << loggedin << endl;
   }
 }
@@ -229,6 +230,8 @@ void State::withdrawal(){
   string input;
   string destaccount;
   float amount;
+  float fees;
+
   //accountposition is where in the accountlist vector the inputted account is.
   int accountposition = -1;
   //if admin, ask for account holder's name
@@ -489,6 +492,7 @@ void State::paybill(){
   string input;
   string sourceaccount;
   float amount;
+  float fees;
   string company;
   //accountposition is where in the accountlist vector the inputted account is.
   int accountposition = -1;;
@@ -588,8 +592,10 @@ void State::paybill(){
   string student;
   if(accountlist.at(accountposition).student){
     student = "S";
+    fees = 0.05;
   }else{
     student = "N";
+    fees = 0.10;
   }
 
   if (accountlist.at(accountposition).holder.compare(name) == 0){
@@ -613,6 +619,7 @@ void State::deposit(){
   string input;
   string destaccount;
   float amount;
+  float fees;
   //accountposition is where in the accountlist vector the inputted account is.
   int accountposition = -1;
   //if admin, ask for account holder's name
@@ -687,8 +694,10 @@ void State::deposit(){
   string student;
   if(accountlist.at(accountposition).student){
     student = "S";
+    fees = 0.05;
   }else{
     student = "N";
+    fees = 0.10;
   }
 
   if (accountlist.at(accountposition).holder.compare(name) == 0){
