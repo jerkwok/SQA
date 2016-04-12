@@ -35,11 +35,11 @@ public class CreateTransaction extends Transaction {
         "Expected account holder name, got empty string"
       );
     }
-    if (!misc.equals("")) {
+    /*if (!misc.equals("")) {
       throw new InvalidTransactionException(
         "Expected misc to be empty, got \"" + misc + "\""
       );
-    }
+    }*/
 
     this.accountNumber = ++(context.highestAccountId);
     this.accountHolder = accountHolder;

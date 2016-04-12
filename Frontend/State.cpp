@@ -759,7 +759,7 @@ void State::create(){
       lastnumber = stoi(accountlist.at(accountlist.size()-1).number) + 1;
     }
     //add the transaction
-    addtransaction(5, name, to_string(lastnumber), newbalance, "00", "N");        
+    addtransaction(5, name, "00000"/*to_string(lastnumber)*/, newbalance, "00", "N");        
 
   }else{
     //only admins can do this
