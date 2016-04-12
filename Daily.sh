@@ -2,6 +2,10 @@
 
 #day=${1:-1}
 
+cd Frontend/
+
+make
+
 rm $6
 
 # Run the frontend 5 times
