@@ -1,0 +1,11 @@
+input01:
+testPerson02 2 1000.00 > 1700.30
+
+input02:
+John Doe 1000.00
+
+input03:
+Steve 6 -90.00 > 799.90
+
+input04:
+Steve 6 20.00 > 819.80
