@@ -1,0 +1,16 @@
+Create 7 accounts accross 4 the input files
+
+input01:
+John Doe 100.00
+testPerson02 500.30
+
+input02:
+testPerson01 10000.00
+
+input03:
+Jane Doe 231.10
+John Doe 500.05
+
+input04:
+Steve 890.00
+Jeff Doe 0.42
