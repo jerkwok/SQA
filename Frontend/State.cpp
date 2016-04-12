@@ -152,6 +152,9 @@ void State::loadaccounts(string filename){
       //Third token is A or D for enabled/disabled account.
       tok = strtok(NULL, " ");
 
+      // if (tmp.number.compare("00005")){
+      //   cout << "00005" << tok[0] << endl;
+      // }
       if (tok[0] == 'A'){
         tmp.active = 1;
       }else{
@@ -897,12 +900,14 @@ void State::disable(){
         //check if account number matches given name
         if (accountlist.at(i).holder.compare(name) == 0){
           //account must be enabled
+          cout << accountlist.at(i).active << endl;
           if (accountlist.at(i).active){
             //add the transaction
             addtransaction(07, name, sourceaccount, 0.00, "00", "N");        
             return;
           }else{
             cout << "account needs to be enabled" << endl;
+            return;
           }
         }else{
           cout << "account holder must match account number" << endl;
