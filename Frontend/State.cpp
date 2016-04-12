@@ -323,6 +323,10 @@ void State::withdrawal(){
     //subtract withdrawal from systemstate
     accountlist.at(accountposition).balance -= amount;
     sessionwithdrawn+=amount;
+    //apply fees
+    if(!sessiontype){
+      accountlist.at(accountposition).balance -= fees;
+    }
     //add the transaction
     addtransaction(1, name, destaccount, amount, "00", student);        
   }else{
@@ -438,7 +442,7 @@ void State::transfer(){
       return;
     }
 
-    cout << accountlist.at(accountposition).balance - fees << endl;
+    //cout << accountlist.at(accountposition).balance - fees << endl;
     if (amount > (accountlist.at(accountposition).balance - fees)) {
       cout << "Source account has insufficient funds" << endl;
       return;      
@@ -465,6 +469,12 @@ void State::transfer(){
     accountlist.at(accountposition).balance -= amount;
     //add money from the systemstate destination account
     accountlist.at(destaccountposition).balance += amount;
+
+    //apply fees
+    if(!sessiontype){
+      accountlist.at(accountposition).balance -= fees;
+    }
+
     //add the transactions
     addtransaction(2, name, sourceaccount, amount, "00",student);        
     addtransaction(2, name, destaccount, amount, "00", deststudent); 
@@ -585,6 +595,12 @@ void State::paybill(){
   if (accountlist.at(accountposition).holder.compare(name) == 0){
     //remove the money from the account
     accountlist.at(accountposition).balance -= amount;
+
+    //apply fees
+    if(!sessiontype){
+      accountlist.at(accountposition).balance -= fees;
+    }
+
     //add the transaction
     addtransaction(4, name, sourceaccount, amount, company, student);        
   }else{
@@ -678,6 +694,10 @@ void State::deposit(){
   if (accountlist.at(accountposition).holder.compare(name) == 0){
     //add the amount to the accountlist
     accountlist.at(accountposition).balance += amount;
+    //apply fees
+    if(!sessiontype){
+      accountlist.at(accountposition).balance -= fees;
+    }
     //add the transaction
     addtransaction(4, name, destaccount, amount, "00", student);        
   }else{
