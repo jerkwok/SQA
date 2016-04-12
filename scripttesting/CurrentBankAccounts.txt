@@ -7,3 +7,10 @@
 00007 teststudentexact     A 00400.00 S
 00008 testenough           A 00300.10 N
 00009 testenoughstudent    A 00300.05 S
+00010 John Doe             A 00100.00 N
+00011 testPerson02         A 00500.30 N
+00012 testPerson01         A 10000.00 N
+00013 Jane Doe             A 00231.10 N
+00014 John Doe             A 00500.05 N
+00015 Steve                A 00890.00 N
+00016 Jeff Doe             A 00000.42 N
