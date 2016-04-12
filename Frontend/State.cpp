@@ -969,7 +969,8 @@ void State::changeplan(){
             return;
           }else{
             //add the transaction
-            addtransaction(8, name, sourceaccount, 0.00, "00", "N");   
+            addtransaction(8, name, sourceaccount, 0.00, "00", "N");
+            return;   
           }
         }else{
           cout << "account holder must match account number" << endl;
