@@ -111,7 +111,6 @@ void State::addtransaction(int code, string name, string account, float funds, s
   // if (admin.length() == 1){
   //   admin = admin + " ";
   // }
-  cout << admin << ";" << endl;
   if(admin.compare("N") == 0){
     admin = "S";
   }
