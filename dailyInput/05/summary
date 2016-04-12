@@ -1,0 +1,11 @@
+input01:
+testPerson01 3 -200.00 > 9249.70
+
+input02:
+testPerson01 3 10000.00 > 19249.60
+
+input03:
+Jeff Doe 7 -5.00 > 0.32
+
+input04:
+John Doe 5 > disable
