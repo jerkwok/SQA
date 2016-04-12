@@ -1,0 +1,11 @@
+input01:
+login/out
+
+input02:
+John Doe 1 200.00 > 279.70
+
+input03:
+not multiple of n
+
+input04:
+testPerson02 2 -50.00 > 1700.30
