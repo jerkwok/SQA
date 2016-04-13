@@ -1,8 +1,8 @@
-00001 John Doe             A 00079.80
-00002 testPerson02         A 00700.30
-00003 testPerson01         A 19249.60
-00004 Jane Doe             A 00560.90
-00005 John Doe             D 01499.95
-00006 Steve                A 00890.00
-00007 Jeff Doe             A 00000.32
-00000 END OF FILE          A 00000000
+00001 John Doe             A 00079.80 N
+00002 testPerson02         A 00700.30 N
+00003 testPerson01         A 19249.60 N
+00004 Jane Doe             A 00560.90 N
+00005 John Doe             D 01499.95 N
+00006 Steve                A 00890.00 N
+00007 Jeff Doe             A 00000.32 S
+00000 END OF FILE          A 00000000 N
