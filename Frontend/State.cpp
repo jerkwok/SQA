@@ -222,7 +222,11 @@ void State::login(){
     loggedin = 1;
     cout << "Successful Login" << endl;
 
-    addtransaction(10, name, "00000", 00000.00, admin, admin);        
+    if(admin.compare("S") == 0){
+      addtransaction(10, name, "00000", 00000.00, admin, admin);        
+    } else {
+      addtransaction(10, "", "00000", 00000.00, admin, admin);
+    }
     // cout << "login status: " << loggedin << endl;
   }
 }

@@ -22,11 +22,11 @@ public class DepositTransaction extends Transaction {
     int accountNumber, String accountHolder, int amount, String misc,
     TransactionContext context
   ) {
-    if (!misc.equals("")) {
+    /*if (!misc.equals("")) {
       throw new InvalidTransactionException(
         "Expected misc to be empty, got \"" + misc + "\""
       );
-    }
+    }*/
     if (context.currentUserIsAdministrator) {
       if (accountHolder.equals("")) {
         throw new InvalidTransactionException(

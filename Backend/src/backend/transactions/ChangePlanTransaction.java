@@ -29,11 +29,11 @@ public class ChangePlanTransaction extends Transaction {
         "Expected account holder name, got empty string"
       );
     }
-    if (!misc.equals("")) {
+    /*if (!misc.equals("")) {
       throw new InvalidTransactionException(
         "Expected misc to be empty, got \"" + misc + "\""
       );
-    }
+    }*/
     if (amount != 0) {
       throw new InvalidTransactionException(
         "Expected amount to be 0, got " + amount
